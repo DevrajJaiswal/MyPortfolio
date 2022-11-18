@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsDevPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yOPNvDYN1xHRB-lnh");
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MyPic.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer...</p>
+                <h1>Hi, I'm <span>Dev</Span> <br> From Ghaziabad(UP)</h1>
+            </div>
+        </div>
+    </div>
+    <!--about-section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/MyPic.png" alt=""></div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">
+                        I'm a Frontend Web Developer lives in Ghaziabad, Uttar Pradesh, India.
+                        I Make Web Designs and Web Applications.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Project Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <!--  <li><span>App Development</span><br>Building Android/Ios apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Sep-Sep 2022</span><br>E-Commerce UI Design Using Html, Css and Javascript</li>
+                            <li><span>Aug-Sep 2022</span><br>College Website Using Html. Css and Javascript</li>
+                            <li><span>Jan-Feb 2022</span><br>Vehicle Washing Appointment Using C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2022</span><br>BCA From CCS University, Meerut</li>
+                            <li><span>2018-2019</span><br>Intermediate from UP Board, Allahabad</li>
+                            <li><span>2017-2018</span><br>High School form Up Board, Allahabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Services-section----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I makes the website for clients according to his requirement</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>I make the Web Designes for Clients. also changes the PSD File to Html.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I provides the best User Experience. Through Good UI Design.</p>
+                    <a href="#">Learn more..</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------Services-section----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Self Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/bg.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce Design</h3>
+                        <p>Now, I am Working on this project. But UI is completed.</p>
+                        <a href="https://webs-dev.github.io/E-Commerce-Website/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/bg1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Random Color Generator</h3>
+                        <p>In this project we can generates color and its code randomly.</p>
+                        <a href="https://webs-dev.github.io/RandomColorGenerator/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/bg3.jpg" alt="">
+                    <div class="layer">
+                        <h3>College Website</h3>
+                        <p>This is my college major project. I make this project using Html, Css and Javascript.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--   <a href="" class="btn">See more...</a>    -->
+        </div>
+    </div>
+    <!------------Contact-section----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> jaiswaldevraj337@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9456842394</p>
+                    <div class="social-icons">
+                        <a href="https://youtube.com/channel/UCfHghfC2yDJ_UMF5zm2Mr_w"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/p/Chc15c0vbM_/?igshid=N2NmMDY0OWE="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Devraj010?t=wAnzjyt0awiTG6O-FNXp_w&s=09"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/dev-raj-b74b06215"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=""></a>
+                    </div>
+                    <a href="images/My-Resume.pdf" download="" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mbjbwnaa" method="POST">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off"
+                            required>
+                        <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off"
+                            required>
+                        <textarea name="message" id="message" placeholder="Type your message" autocomplete="off" cols=""
+                            rows="6" minlength="5"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-section-->
+    <div class="copyright">
+        <p>Copyright &#169; Dev's Portfolio Website, Made by Dev</p>
+    </div>
+    <script src=""></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
