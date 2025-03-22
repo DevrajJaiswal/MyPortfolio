@@ -534,7 +534,7 @@ nav .fa {
     background-position: bottom left;
   }
   #home .container {
-    padding-top: 110px;
+    padding-top: 100px;
   }
 
   #home .row {
@@ -545,7 +545,7 @@ nav .fa {
     margin-top: 20px;
     flex-basis: 100%;
   }
-  #home .row .left h1 {
+/*   #home .row .left h1 {
     letter-spacing: 2px;
     font-size: 13px;
   }
@@ -565,6 +565,28 @@ nav .fa {
   }
   #home .right img {
     max-width: 300px;
+  } */
+
+   #home .row .left h1 {
+    letter-spacing: 1px;
+    font-size: 13px;
+  }
+
+  #home .row .left h1 span {
+    font-size: 15px;
+  }
+
+  #home .row .left h2 {
+    font-size: 30px;
+    color: gainsboro;
+    letter-spacing: 2px;
+  }
+  #home .left p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  #home .right img {
+    max-width: 280px;
   }
 
   #about .left,
