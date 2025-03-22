@@ -538,6 +538,7 @@ nav .fa {
   }
 
   #home .row {
+    text-align:center;
     justify-content: space-around;
     flex-direction: column-reverse;
   }
@@ -545,27 +546,6 @@ nav .fa {
     margin-top: 20px;
     flex-basis: 100%;
   }
-/*   #home .row .left h1 {
-    letter-spacing: 2px;
-    font-size: 13px;
-  }
-
-  #home .row .left h1 span {
-    font-size: 16px;
-  }
-
-  #home .row .left h2 {
-    font-size: 30px;
-    color: gainsboro;
-    letter-spacing: 2px;
-  }
-  #home .left p {
-    font-size: 16px;
-    font-weight: 500;
-  }
-  #home .right img {
-    max-width: 300px;
-  } */
 
    #home .row .left h1 {
     letter-spacing: 1px;
@@ -584,6 +564,9 @@ nav .fa {
   #home .left p {
     font-size: 15px;
     font-weight: 500;
+  }
+    #home .btn{
+    margin: auto;
   }
   #home .right img {
     max-width: 280px;
