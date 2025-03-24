@@ -28,8 +28,8 @@ body::-webkit-scrollbar {
 
 .container {
   padding: 50px 5%;
-  background-size: cover;
   width: 100%;
+  height: 100%;
 }
 
 section:nth-child(even) {
@@ -95,10 +95,6 @@ nav ul li {
   list-style: none;
 }
 
-nav ul li:last-child {
-  margin-right: 0 !important;
-}
-
 nav ul li a {
   color: gainsboro;
   text-decoration: none;
@@ -133,12 +129,15 @@ nav ul li a:hover::after {
   background-position: bottom right;
   background-repeat: no-repeat;
 }
-#home .container {
-  padding-top: 180px;
-}
+
 #home .overlay {
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
+  padding-top: 77px;
+}
+
+#home .container {
+  padding: 0 5%;
 }
 
 #home .row {
@@ -153,19 +152,19 @@ nav ul li a:hover::after {
   flex-basis: 50%;
 }
 
-#home h1 {
+#home .row .left h1 {
   color: #b54769;
   color: white;
   letter-spacing: 3px;
   font-size: 18px;
 }
-#home h1 span {
+#home .row .left h1 span {
   color: var(--primary-color);
   font-weight: 1000;
   font-size: 18px;
 }
 
-#home h2 {
+#home .row .left h2 {
   font-size: 55px;
   font-weight: 800;
   color: gainsboro;
@@ -181,11 +180,11 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 35%;
 }
 
 #home .right img {
-  /* max-width: 450px; */
-  max-width: 100%;
+  width: 100%;
   will-change: transform;
   animation-name: move;
   animation-duration: 8s;
@@ -327,11 +326,6 @@ nav ul li a:hover::after {
   font-weight: 800;
   margin-bottom: 15px;
 }
-.services-list .service p {
-  font-size: 13px;
-  line-height: 20px;
-  margin-bottom: 15px;
-}
 
 .services-list .service a {
   text-decoration: none;
@@ -382,10 +376,7 @@ nav ul li a:hover::after {
 .project .layer h3 {
   font-size: 20px;
 }
-.project .layer p {
-  font-size: 15px;
-  letter-spacing: 1px;
-}
+
 .project .layer a {
   color: var(--primary-color);
   text-decoration: none;
@@ -494,7 +485,6 @@ nav .fa {
   .section-title {
     font-size: 25px;
     letter-spacing: 1px;
-
   }
   header {
     background-position: center;
@@ -532,22 +522,20 @@ nav .fa {
 
   #home {
     background-position: bottom left;
-  }
-  #home .container {
-    padding-top: 100px;
+    height: 100%;
   }
 
   #home .row {
-    text-align:center;
-    justify-content: space-around;
+    padding: 25px 0;
+    text-align: center;
+    justify-content: space-between;
     flex-direction: column-reverse;
   }
-  #home .row .left {
-    margin-top: 20px;
-    flex-basis: 100%;
+  #home .row .left{
+    margin-top: 10px;
   }
 
-   #home .row .left h1 {
+  #home .row .left h1 {
     letter-spacing: 1px;
     font-size: 13px;
   }
@@ -565,21 +553,20 @@ nav .fa {
     font-size: 15px;
     font-weight: 500;
   }
-    #home .btn{
+  #home .btn {
     margin: auto;
   }
   #home .right img {
     max-width: 280px;
   }
 
-  #about .left,
-  #about .right {
-    flex-basis: 100%;
-  }
   #about .left {
+    margin-top: 20px;
+    flex-basis: 100%;
     margin-bottom: 25px;
   }
   #about .right {
+    flex-basis: 100%;
     font-size: 14px;
   }
   .tab-links {
