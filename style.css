@@ -26,6 +26,10 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   padding: 50px 5%;
   width: 100%;
@@ -231,8 +235,9 @@ nav ul li a:hover::after {
 #about .left img {
   width: 100%;
   background: grey;
-  border: 1px solid grey;
+  background-color: #131313;
   border-radius: 5%;
+  box-shadow: -10px 10px 20px var(--primary-color);
 }
 
 #about .right {
@@ -283,7 +288,7 @@ nav ul li a:hover::after {
 .tab-contents ul li .duration {
   font-weight: 600;
   color: #fff;
-  font-size: 15px;
+  font-size: 13px;
 }
 .tab-contents {
   display: none;
@@ -334,12 +339,11 @@ nav ul li a:hover::after {
   font-size: 15px;
 }
 
-/*-----------Portfolio-section-start-------*/
+/*-----------Projects-section-start-------*/
 
 .project-list {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  grid-template-columns: 300px 300px auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -531,7 +535,7 @@ nav .fa {
     justify-content: space-between;
     flex-direction: column-reverse;
   }
-  #home .row .left{
+  #home .row .left {
     margin-top: 10px;
   }
 
@@ -574,7 +578,7 @@ nav .fa {
     margin-right: 30px;
   }
   #projects .project-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   #contact .row {
     flex-wrap: wrap;

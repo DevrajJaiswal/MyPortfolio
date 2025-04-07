@@ -1,349 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Devraj Jaiswal - PHP Full Stack Developer</title>
-  
-  <meta name="description" content="Devraj Jaiswal – Full Stack Web Developer from Ghaziabad, Uttar Pradesh, with 1.5 years of experience in building scalable, SEO-friendly, and user-centric web solutions. Skilled in HTML, CSS, JavaScript, PHP, and MySQL, I develop high-performance websites and web applications for businesses. Open to full-time roles and freelance projects. Let’s connect!" />
-  
-  <meta name="keywords" content="Full Stack Developer, Web Developer, PHP Developer, JavaScript, MySQL, HTML, CSS, Ghaziabad, Freelance Web Development" />
-  
-  <meta name="author" content="Devraj Jaiswal" />
-  
-  <link rel="canonical" href="https://devrajjaiswal.in/" />
+    <title>Devraj Jaiswal - PHP Full Stack Developer</title>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Devraj Jaiswal | Full Stack Web Developer & Web Solutions Expert in Ghaziabad" />
-  <meta property="og:description" content="Explore my portfolio showcasing 1.5 years of Full Stack Development expertise." />
-  <meta property="og:image" content="https://devrajjaiswal.in/images/devraj-profile-picture.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:url" content="https://devrajjaiswal.in" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Devraj Jaiswal - Full Stack Web Developer" />
+    <meta
+      name="description"
+      content="Devraj Jaiswal – Full Stack Web Developer from Ghaziabad, Uttar Pradesh, with 1.5 years of experience in building scalable, SEO-friendly, and user-centric web solutions. Skilled in HTML, CSS, JavaScript, PHP, and MySQL, I develop high-performance websites and web applications for businesses. Open to full-time roles and freelance projects. Let’s connect!"
+    />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Web Developer, PHP Developer, JavaScript, MySQL, HTML, CSS, Ghaziabad, Freelance Web Development"
+    />
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="Devraj Jaiswal" />
 
-  <!-- Scripts -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("yOPNvDYN1xHRB-lnh");
-    })();
-  </script>
-</head>
+    <link rel="canonical" href="https://devrajjaiswal.in/" />
 
-<body>
-  <header>
-    <div class="container">
-      <nav>
-        <span><img src="images/favicon.png" class="logo" alt="Logo" /></span>
-        <ul id="sidemenu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
-        </ul>
-        <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-    </div>
-  </header>
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Devraj Jaiswal | Full Stack Web Developer & Web Solutions Expert in Ghaziabad"
+    />
+    <meta
+      property="og:description"
+      content="Explore my portfolio showcasing 1.5 years of Full Stack Development expertise."
+    />
+    <meta
+      property="og:image"
+      content="https://devrajjaiswal.in/images/devraj-profile-picture.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://devrajjaiswal.in" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:site_name"
+      content="Devraj Jaiswal - Full Stack Web Developer"
+    />
 
-  <section id="home">
-    <div class="overlay">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- Fontawesome CDN -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <!-- AOS  JS CDN -->
+
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("yOPNvDYN1xHRB-lnh");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!--header-section start-->
+    <header>
+      <div class="container">
+        <nav>
+          <span
+            ><a href="#about"
+              ><img src="images/favicon.png" class="logo" alt="Logo" /></a
+          ></span>
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </header>
+    <!--header-section end-->
+
+    <!--Home-section start-->
+    <section id="home">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="left" data-aos="fade-right" data-aos-duration="800">
+              <h1>Hi, I'm <span>Devraj Jaiswal</span> From Ghaziabad</h1>
+              <h2>Full Stack Developer</h2>
+              <p>
+                Passionate about crafting scalable, SEO-friendly, and
+                user-centric web solutions to help businesses grow online.
+              </p>
+              <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="right" data-aos="fade-left" data-aos-duration="800">
+              <img src="images/full stack.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Home-section end-->
+
+    <!--about-section start-->
+    <section id="about">
       <div class="container">
         <div class="row">
           <div class="left">
-            <h1> Hi, I'm <span>Devraj Jaiswal</span> From Ghaziabad
-            </h1>
-            <h2>
-              Full Stack Developer
-            </h2>
-            <p>
-              Passionate about crafting scalable, SEO-friendly, and
-              user-centric web solutions to help businesses grow online.
-            </p>
-            <a href="#contact" class="btn">Contact Me</a>
+            <img src="images/devraj profile picture.png" alt="" />
           </div>
           <div class="right">
-            <img src="images/full stack.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--about-section-->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="left">
-          <img src="images/devraj profile picture.png" alt="" />
-        </div>
-        <div class="right">
-          <h2 class="section-title">About Me</h2>
-          <p class="para">
-            I'm Devraj Jaiswal, a Full Stack Web Developer based in Ghaziabad, Uttar Pradesh, with 1.5 years of
-            experience in building scalable, SEO-friendly, and user-centric web solutions. With expertise in HTML, CSS,
-            JavaScript, PHP, and MySQL, I specialize in creating high-performance websites and web applications tailored
-            to business needs.
-            <br><br>
-            With a strong foundation in both frontend and backend development, I bring problem-solving skills and
-            technical expertise to every project. Whether you're an employer looking for a skilled developer or a client
-            in need of a reliable freelancer, I’m here to help. Let’s connect and build something great together!
-          </p>
-          <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">
-              Skills
+            <h2 class="section-title">About Me</h2>
+            <p class="para">
+              I'm Devraj Jaiswal, a Full Stack Web Developer based in Ghaziabad,
+              Uttar Pradesh, with 1.5 years of experience in building scalable,
+              SEO-friendly, and user-centric web solutions. With expertise in
+              HTML, CSS, JavaScript, PHP, and MySQL, I specialize in creating
+              high-performance websites and web applications tailored to
+              business needs.
+              <br /><br />
+              With a strong foundation in both frontend and backend development,
+              I bring problem-solving skills and technical expertise to every
+              project. Whether you're an employer looking for a skilled
+              developer or a client in need of a reliable freelancer, I’m here
+              to help. Let’s connect and build something great together!
             </p>
-            <p class="tab-links" onclick="opentab('experiences')">
-              Experience
-            </p>
-            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experiences')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend: </span>HTML, CSS, JavaScript, Bootstrap,
+                  jQuery, AJAX
+                </li>
+                <li><span>Backend: </span>PHP, MySQL, REST API</li>
+                <li><span>CMS & Tools: </span>WordPress, Postman</li>
+                <li><span>Version Control: </span>Git, GitHub</li>
+                <li><span>Design: </span>Adobe Photoshop, Canva</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+              <ul>
+                <li>
+                  <span>Saison Components</span> - Web Master<br /><span
+                    class="duration"
+                    >Oct-2023 – Present.</span
+                  >
+                </li>
+                <li>
+                  <span>Jaikvik Technologies</span> - Web Developer<br />
+                  <span class="duration">June-2023 – Aug-2023.</span>
+                </li>
+                <li>
+                  <span>Infonic Web</span> - Web Developer<br /><span
+                    class="duration"
+                    >Nov-2022 – May-2023.
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>MCA</span> - AKTU<br /><span class="duration"
+                    >08/2023 - Pursuing
+                  </span>
+                  - Ghaziabad, Uttar Pradesh
+                </li>
+                <li>
+                  <span>BCA</span> - CCS University<br /><span class="duration"
+                    >08/2019 - 06/2022
+                  </span>
+                  - Ghaziabad, Uttar Pradesh
+                </li>
+                <li>
+                  <span>Intermediate</span> - UP Board<br /><span
+                    class="duration"
+                    >07/2018 - 06/2019
+                  </span>
+                  - Ghaziabad, Uttar Pradesh
+                </li>
+                <li>
+                  <span>High School</span> - UP Board<br /><span
+                    class="duration"
+                    >07/2016 - 06/2017
+                  </span>
+                  - Ghaziabad, Uttar Pradesh
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="tab-contents active-tab" id="skills">
+        </div>
+      </div>
+    </section>
+    <!--about-section end-->
+
+    <!------------Services-section----------->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-list">
+          <div class="service">
+            <span class="">💻</span>
+            <h3>Web Development</h3>
             <ul>
-              <li><span>Frontend: </span>HTML, CSS, JavaScript, Bootstrap</li>
-              <li><span>Backend: </span>PHP, MySQL</li>
-              <li><span>CMS & Tools: </span>WordPress, Elementor</li>
-              <li><span>Version Control: </span>Git, GitHub</li>
-              <li><span>Design: </span>Adobe Photoshop, Canva</li>
+              <li>Custom Website Development.</li>
+              <li>Business & Corporate Websites.</li>
+              <li>Portfolio Websites</li>
+              <li>Landing Page Design</li>
             </ul>
+            <a href="#projects">See My Work...</a>
           </div>
-          <div class="tab-contents" id="experiences">
+          <div class="service">
+            <span class="">🔧</span>
+            <h3>WordPress Development</h3>
+            <ul>
+              <li>Custom WordPress Themes & Plugins.</li>
+              <li>WordPress Website Setup & Maintenance.</li>
+              <li>Bug Fixing & Troubleshooting.</li>
+            </ul>
+            <a href="#projects">See My Work...</a>
+          </div>
+          <div class="service">
+            <span class="">📊</span>
+            <h3>Digital Solutions & Consulting</h3>
+            <ul>
+              <li>Website Maintenance & Support.</li>
+              <li>Domain & Hosting Setup .</li>
+              <li>Custom Web Solutions.</li>
+            </ul>
+            <a href="#projects">See My Work...</a>
+          </div>
+          <div class="service">
+            <span class="">🎨</span>
+            <h3>UI/UX & Website Optimization</h3>
+            <ul>
+              <li>Website Redesign & Revamp.</li>
+              <li>Speed Optimization.</li>
+              <li>SEO & Performance Enhancemen.</li>
+            </ul>
+            <a href="#projects">See My Work...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------Services-section end----------->
+
+    <!------------ Projects section start----------->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">🚀 Projects</h2>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/saison.png" alt="" />
+            <div class="layer">
+              <h3>Saison Components</h3>
+              <a href="https://Saisoncomponents.com/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/radicon.png" alt="" />
+            <div class="layer">
+              <h3>Radicon Laboratories</h3>
+              <a href="https://radiconlab.com/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Optimum ecosolutions.png" alt="" />
+            <div class="layer">
+              <h3>Optimum EcoSolutions</h3>
+              <a href="https://optimumecosolutions.in/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Optimum motors.png" alt="" />
+            <div class="layer">
+              <h3>Optimum Motors</h3>
+              <a href="https://optimumgroups.in/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/bg.jpg" alt="" />
+            <div class="layer">
+              <h3>News Portal</h3>
+              <a
+                href="https://github.com/DevrajJaiswal/News-Portal"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Wroley e-scooter.png" alt="" />
+            <div class="layer">
+              <h3>Wroley E-Scooter</h3>
+              <a href="https://wroley-e-scooter.netlify.app/" target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------ Projects section end----------->
+
+    <!------------Contact-section start----------->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <!-- <h2 class="section-title">Let’s connect and build something amazing together!</h2> -->
+        <div class="row">
+          <div class="left">
             <ul>
               <li>
-                <span>Saison Components - </span>Web Master<br /><span class="duration">Oct-2023 – Present.</span>
+                <a href="https://g.co/kgs/BRhj1bP" target="_blank"
+                  ><i class="fa fa-location-dot"></i> Mohan Nagar, Ghaziabad,
+                  UP-201007</a
+                >
               </li>
               <li>
-                <span>Jaikvik Technologies - </span>Web Developer<br />
-                <span class="duration">June-2023 – Aug-2023.</span>
+                <a href="mailto:devrajjaiswal337@gmail.com"
+                  ><i class="fa fa-paper-plane"></i
+                  >devrajjaiswal337@gmail.com</a
+                >
               </li>
               <li>
-                <span>Infonic Web - </span>Web Developer<br /><span class="duration">Nov-2022 – May-2023.
-                </span>
+                <a href="tel:+919456842394">
+                  <i class="fa fa-phone"></i>+91-9456842394</a
+                >
               </li>
+              <ul class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/devraj-jaiswal/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/devrajjaiswal" target="_blank"
+                  ><i class="fa-brands fa-github" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://twitter.com/Devraj010?t=wAnzjyt0awiTG6O-FNXp_w&s=09"
+                  target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@devraj_jaiswal"
+                  target="_blank"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </ul>
             </ul>
+            <a
+              href="images/Devraj-Resume-Web-Developer.pdf"
+              download=""
+              class="btn"
+              >Download Resume</a
+            >
           </div>
-          <div class="tab-contents" id="education">
-            <ul>
-              <li>
-                <span>MCA - </span>August 2023 - Pursuing<br />Currently
-                pursuing my MCA from AKTU, Lucknow.
-              </li>
-              <li>
-                <span>BCA - </span>August 2019 - June 2022 <br />I have
-                completed my Graduation from CCS University, Meerut, Uttar
-                Pradesh.
-              </li>
-              <li>
-                <span>Intermediate - </span>July 2018 - June 2019 <br />I have
-                completed my Intermediate from UP Board, Allahabad, Uttar
-                Pradesh.
-              </li>
-              <li>
-                <span>High School - </span>July 2016 - June 2017<br />I have
-                completed my High School from UP Board, Allahabad, Uttar
-                Pradesh.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!------------Services-section----------->
-  <section id="services">
-    <div class="container">
-      <h2 class="section-title">My Services</h2>
-      <div class="services-list">
-        <div class="service">
-          <span class="">💻</span>
-          <h3>Web Development</h3>
-          <ul>
-            <li>Custom Website Development.</li>
-            <li>Business & Corporate Websites.</li>
-            <li>Portfolio Websites</li>
-            <li>Landing Page Design</li>
-          </ul>
-          <a href="#portfolio">See My Work...</a>
-        </div>
-        <div class="service">
-          <span class="">🔧</span>
-          <h3>WordPress Development</h3>
-          <ul>
-            <li>Custom WordPress Themes & Plugins.</li>
-            <li>WordPress Website Setup & Maintenance.</li>
-            <li>Bug Fixing & Troubleshooting.</li>
-          </ul>
-          <a href="#portfolio">See My Work...</a>
-        </div>
-        <div class="service">
-          <span class="">📊</span>
-          <h3>Digital Solutions & Consulting</h3>
-          <ul>
-            <li>Website Maintenance & Support.</li>
-            <li>Domain & Hosting Setup .</li>
-            <li>Custom Web Solutions.</li>
-          </ul>
-          <a href="#portfolio">See My Work...</a>
-        </div>
-        <div class="service">
-          <span class="">🎨</span>
-          <h3>UI/UX & Website Optimization</h3>
-          <ul>
-            <li>Website Redesign & Revamp.</li>
-            <li>Speed Optimization.</li>
-            <li>SEO & Performance Enhancemen.</li>
-          </ul>
-          <a href="#portfolio">See My Work...</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!------------Corporate Work & Freelance Projects section----------->
-  <section id="portfolio">
-    <div class="container">
-      <h2 class="section-title">Corporate & Freelance Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <img src="images/saison.png" alt="" />
-          <div class="layer">
-            <h3>Saison Components</h3>
-            <a href="https://Saisoncomponents.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="images/radicon.png" alt="" />
-          <div class="layer">
-            <h3>Radicon Laboratories</h3>
-            <a href="https://radiconlab.com/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="images/Optimum ecosolutions.png" alt="" />
-          <div class="layer">
-            <h3>Optimum EcoSolutions</h3>
-            <a href="https://optimumecosolutions.in/" target="_blank"><i
-                class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="images/Optimum motors.png" alt="" />
-          <div class="layer">
-            <h3>Optimum Motors</h3>
-            <a href="https://optimumgroups.in/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+          <div class="right">
+            <form action="https://formspree.io/f/mbjbwnaa" method="POST">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                autocomplete="off"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your E-mail"
+                autocomplete="off"
+                required
+              />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Type your message"
+                autocomplete="off"
+                cols=""
+                rows="4"
+                minlength="5"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
           </div>
         </div>
       </div>
-      <!--   <a href="" class="btn">See more...</a>    -->
-    </div>
-  </section>
+    </section>
+    <!------------Contact-section end----------->
 
-  <!------------ Personal Projects section----------->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">🚀 Personal Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <img src="images/bg.jpg" alt="" />
-          <div class="layer">
-            <h3>News Portal</h3>
-            <a href="#" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="images/Wroley e-scooter.png" alt="" />
-          <div class="layer">
-            <h3>Wroley E-Scooter</h3>
-            <a href="https://wroley-e-scooter.netlify.app/" target="_blank"><i
-                class="fa-solid fa-up-right-from-square"></i></a>
-          </div>
-        </div>
-        <!--   <div class="project">
-                    <img src="images/bg.jpg" alt="">
-                    <div class="layer">
-                        <h3>Optimum EcoSolutions</h3>
-                        <a href="https://optimumecosolutions.in/" target="_blank"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="images/bg.jpg" alt="">
-                    <div class="layer">
-                        <h3>Optimum Motors</h3>
-                        <a href="https://optimumgroups.in/" target="_blank"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div> -->
-      </div>
-      <!--   <a href="" class="btn">See more...</a>    -->
-    </div>
-  </section>
+    <!--footer-section-->
+    <footer class="copyright">
+      <p>© 2025 Devraj Jaiswal. All Rights Reserved.</p>
+    </footer>
+    <!--footer-section end-->
 
-  <!------------Contact-section----------->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact Us</h2>
-      <!-- <h2 class="section-title">Let’s connect and build something amazing together!</h2> -->
-      <div class="row">
-        <div class="left">
-          <ul>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>Mohan Nagar, Ghaziabad,
-              UP-201007
-            </li>
-            <li>
-              <i class="fa-solid fa-paper-plane"></i>devrajjaiswal337@gmail.com
-            </li>
-            <li><i class="fa-solid fa-phone"></i>+91-9456842394</li>
-            <ul class="social-icons">
-              <a href="https://www.linkedin.com/in/devraj-jaiswal/" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i></a>
-              <a href="https://github.com/devrajjaiswal" target="_blank"><i class="fa-brands fa-github"
-                  aria-hidden="true"></i></a>
-              <a href="https://twitter.com/Devraj010?t=wAnzjyt0awiTG6O-FNXp_w&s=09" target="_blank"><i
-                  class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.youtube.com/@devraj_jaiswal" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-              <a href="https://www.instagram.com/devrajjaiswal2882/" target="_blank"><i
-                  class="fa-brands fa-instagram"></i></a>
-              <a href="https://www.facebook.com/devrajjaiswal2882" target="_blank"><i
-                  class="fa-brands fa-facebook"></i></a>
-            </ul>
-
-          </ul>
-          <a href="images/Devraj-Resume-Web-Developer.pdf" download="" class="btn">Download Resume</a>
-        </div>
-        <div class="right">
-          <form action="https://formspree.io/f/mbjbwnaa" method="POST">
-            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="off" required />
-            <input type="email" name="email" id="email" placeholder="Enter your Email" autocomplete="off" required />
-            <textarea name="message" id="message" placeholder="Type your message" autocomplete="off" cols="" rows="4"
-              minlength="5"></textarea>
-            <button type="submit" class="btn">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--footer-section-->
-  <footer class="copyright">
-    <p>© 2025 Devraj Jaiswal. All Rights Reserved.</p>
-  </footer>
-  <script src="index.js"></script>
-</body>
-
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    Initialize AOS
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>

@@ -8,7 +8,6 @@ function closemenu() {
   sidemenu.style.right = "-200px";
 }
 
-
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
 
