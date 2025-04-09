@@ -7,6 +7,8 @@
   font-weight: 600;
   letter-spacing: 1px;
 }
+
+/* Global start */
 :root {
   --primary-color: #ff004f;
   --text-color: gainsboro;
@@ -66,7 +68,9 @@ section:nth-child(even) {
   border: 2px solid var(--primary-color);
   transform: translateY(-3px);
 }
+/* Global start */
 
+/* Header start */
 header {
   position: fixed;
   top: 0;
@@ -123,7 +127,13 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+nav .fa {
+  display: none;
+  cursor: pointer;
+}
+/* Header start */
 
+/* Hero-section start */
 #home {
   width: 100%;
   height: 100vh;
@@ -213,8 +223,9 @@ nav ul li a:hover::after {
     transform: translateX(0);
   }
 }
+/* Hero-section end */
 
-/*-------------about-section--------------*/
+/*-------------about-section start--------------*/
 #about {
   color: #ababab;
   letter-spacing: 1px;
@@ -296,6 +307,7 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
+/* about-section end */
 
 /*-----------Services-section-start-------*/
 
@@ -338,9 +350,9 @@ nav ul li a:hover::after {
   color: white;
   font-size: 15px;
 }
+/*-----------Services-section-end-------*/
 
 /*-----------Projects-section-start-------*/
-
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -401,8 +413,9 @@ nav ul li a:hover::after {
 .project:hover .layer {
   height: 100%;
 }
+/*-----------Projects-section-end-------*/
 
-/*-----------contact-section-------*/
+/*-----------contact-section start-------*/
 #contact .row {
   display: flex;
   justify-content: space-between;
@@ -458,24 +471,22 @@ form textarea {
 textarea {
   margin-bottom: 0 !important;
 }
+/*-----------contact-section end-------*/
 
-/*-----------footer-section-------*/
+/*-----------footer-section start------*/
 .copyright {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
-  padding: 15px 0;
+  padding: 5px 0;
   background: #262626;
 }
 .copyright p {
   letter-spacing: 1px;
+  font-size: 15px;
 }
+/*-----------footer-section end------*/
 
-nav .fa {
-  display: none;
-  cursor: pointer;
-}
-/*-----------Css for small-secreen-section-------*/
-
+/*-----------Media queries for mobile device start-------*/
 @media only screen and (max-width: 600px) {
   .container {
     padding: 30px 15px;
@@ -599,3 +610,4 @@ nav .fa {
     padding: 10px;
   }
 }
+/*-----------Media queries for mobile device start-------*/
