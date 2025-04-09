@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.devrajjaiswal\.in [NC]
+RewriteRule ^(.*)$ https://devrajjaiswal.in/$1 [L,R=301]
+
+# Redirect http to https
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://devrajjaiswal.in/$1 [L,R=301]
