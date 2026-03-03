@@ -18,12 +18,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #080808;
   color: var(--text-color);
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -523,7 +525,6 @@ textarea {
     display: block;
     font-size: 25px;
     padding: 2px;
-    margin-left: auto;
   }
   nav ul {
     background: var(--primary-color);

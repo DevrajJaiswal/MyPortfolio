@@ -35,7 +35,7 @@ function Contact() {
                                     <a href="https://www.youtube.com/@devraj_jaiswal" target="_blank"><i className="fa-brands fa-youtube"></i></a>
                                 </ul>
                             </ul>
-                            <Button type='route' text='Download Resume' link='images/Devraj-Resume-Web-Developer.pdf' />
+                            <a href="images/Devraj-Resume-Web-Developer.pdf" download="" className="btn">Download Resume</a>
                         </div>
                         <div className="right" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
                             <form action="https://formspree.io/f/mbjbwnaa" method="POST">
@@ -54,3 +54,5 @@ function Contact() {
 }
 
 export default Contact
+
+export { Contact }
