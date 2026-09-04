@@ -1,27 +1,75 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const openMenu = () => setIsMenuOpen(true);
     const closeMenu = () => setIsMenuOpen(false);
+
+    const navLinks = [
+        { label: 'Home', to: '/' },
+        { label: 'About', to: '/about' },
+        { label: 'Skills', to: '/skills' },
+        { label: 'Projects', to: '/projects' },
+        { label: 'Contact', to: '/contact' },
+    ];
 
     return (
         <>
             <header>
                 <div className="container">
-                    <nav>
-                        <span><Link to="/about"><img src="images/favicon.png" className="logo" alt="Logo" /></Link></span>
-                        <ul id="sidemenu" style={{ right: isMenuOpen ? '0' : '-200px' }}>
-                            <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-                            <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-                            <li><Link to="/skills" onClick={closeMenu}>Skills</Link></li>
-                            <li><Link to="/projects" onClick={closeMenu}>Projects</Link></li>
-                            <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-                            <i className="fa fa-solid fa-xmark" onClick={closeMenu}></i>
+                    <nav aria-label="Primary navigation">
+                        <Link to="/" className="brand" onClick={closeMenu}>
+                            <img src="images/favicon.png" className="logo" alt="Devraj Jaiswal logo" />
+                            <span>
+                                <strong>Devraj Jaiswal</strong>
+                                <small>Full Stack Developer</small>
+                            </span>
+                        </Link>
+
+                        <ul id="sidemenu" className={isMenuOpen ? 'is-open' : ''}>
+                            {navLinks.map((link) => (
+                                <li key={link.to}>
+                                    <NavLink
+                                        to={link.to}
+                                        onClick={closeMenu}
+                                        className={({ isActive }) => isActive ? 'active' : undefined}
+                                    >
+                                        {link.label}
+                                    </NavLink>
+                                </li>
+                            ))}
+                            <li>
+                                <a
+                                    href="/images/Devraj-Jaiswal-Resume-Full-Stack-Web-Developer.pdf"
+                                    className="resume-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick={closeMenu}
+                                >
+                                    Resume
+                                </a>
+                            </li>
+                            <button
+                                type="button"
+                                className="menu-control menu-close"
+                                aria-label="Close navigation menu"
+                                onClick={closeMenu}
+                            >
+                                <i className="fa fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
                         </ul>
-                        <i className="fa fa-solid fa-bars" onClick={openMenu}></i>
+
+                        <button
+                            type="button"
+                            className="menu-control menu-open"
+                            aria-label="Open navigation menu"
+                            aria-controls="sidemenu"
+                            aria-expanded={isMenuOpen}
+                            onClick={() => setIsMenuOpen(true)}
+                        >
+                            <i className="fa fa-solid fa-bars" aria-hidden="true"></i>
+                        </button>
                     </nav>
                 </div>
             </header>

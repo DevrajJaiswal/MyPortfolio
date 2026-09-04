@@ -176,6 +176,32 @@ nav {
   width: 100%;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.brand span {
+  display: grid;
+  gap: 1px;
+}
+
+.brand strong {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 850;
+  line-height: 1.1;
+}
+
+.brand small {
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .logo {
   width: 48px;
   height: 48px;
@@ -225,19 +251,56 @@ nav ul li a::after {
 }
 
 nav ul li a:hover,
-nav ul li a:focus-visible {
+nav ul li a:focus-visible,
+nav ul li a.active {
   color: var(--text);
   background: rgba(255, 255, 255, 0.04);
 }
 
 nav ul li a:hover::after,
-nav ul li a:focus-visible::after {
+nav ul li a:focus-visible::after,
+nav ul li a.active::after {
   transform: scaleX(1);
 }
 
-nav .fa {
+.resume-link {
+  border: 1px solid rgba(240, 84, 84, 0.52);
+  background: rgba(240, 84, 84, 0.14);
+  color: var(--text);
+}
+
+.resume-link::after {
   display: none;
+}
+
+.menu-control {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
   cursor: pointer;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.menu-control:hover {
+  border-color: rgba(240, 84, 84, 0.42);
+  background: rgba(240, 84, 84, 0.12);
+}
+
+.menu-control i {
+  color: inherit;
+}
+
+.menu-close {
+  display: none;
 }
 
 #home {
@@ -674,11 +737,20 @@ textarea {
     margin-bottom: 24px;
   }
 
-  nav .fa {
-    display: block;
-    color: var(--text);
-    font-size: 1.55rem;
-    padding: 4px;
+  .brand {
+    gap: 10px;
+  }
+
+  .brand strong {
+    font-size: 0.95rem;
+  }
+
+  .brand small {
+    font-size: 0.68rem;
+  }
+
+  .menu-open {
+    display: inline-flex;
   }
 
   nav ul {
@@ -695,6 +767,10 @@ textarea {
     transition: right 220ms ease;
   }
 
+  nav ul.is-open {
+    right: 0;
+  }
+
   nav ul li {
     display: block;
     margin-bottom: 10px;
@@ -705,8 +781,9 @@ textarea {
     padding: 10px 12px;
   }
 
-  nav ul .fa {
+  .menu-close {
     position: absolute;
+    display: inline-flex;
     top: 22px;
     right: 20px;
   }
