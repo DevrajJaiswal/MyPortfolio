@@ -497,10 +497,55 @@ nav ul li a.active::after {
   flex: 1 1 62%;
 }
 
-#about .right .para {
+#about .right h2 {
+  max-width: 720px;
+  color: var(--text);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 850;
+  line-height: 1.12;
+}
+
+.section-kicker {
+  margin-bottom: 8px;
+  color: var(--accent-strong);
+  font-size: 0.88rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-copy {
+  display: grid;
+  gap: 14px;
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+#about .right .para,
+.about-copy p {
   color: var(--text-muted);
   font-size: 0.98rem;
   text-align: left;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.about-highlights li {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text-soft);
+  padding: 14px;
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.45;
+  list-style: none;
 }
 
 .tab-titles {
@@ -521,6 +566,7 @@ nav ul li a.active::after {
   font-size: 0.95rem;
   font-weight: 800;
   cursor: pointer;
+  appearance: none;
   transition:
     border-color 180ms ease,
     background 180ms ease,
@@ -818,6 +864,10 @@ textarea {
   #home .right img {
     width: min(100%, 300px);
   }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -953,6 +1003,10 @@ textarea {
 
   #about .left img {
     max-width: 420px;
+  }
+
+  #about .right h2 {
+    font-size: clamp(1.8rem, 9vw, 2.55rem);
   }
 
   .tab-titles {
