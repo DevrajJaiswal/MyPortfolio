@@ -79,12 +79,12 @@ function About() {
                             <div className={`tab-contents ${activeTab === 'experiences' ? 'active-tab' : ''}`} id="experiences">
                                 <ul>
                                     <li>
-                                        <span>Saison Components</span> - Web Developer & Tech Support<br />
-                                        <span className="duration">Oct 2023 - June 2025</span>
+                                        <span>Webkul Software Pvt Ltd</span> - Associate Software Engineer<br />
+                                        <span className="duration">July 2025 - September 2026</span>
                                     </li>
                                     <li>
-                                        <span>Infonic Web</span> - Web Developer<br />
-                                        <span className="duration">Oct 2022 - Sep 2023</span>
+                                        <span>Saison Components</span> - Web Developer & Tech Support<br />
+                                        <span className="duration">October 2023 - June 2025</span>
                                     </li>
                                 </ul>
                             </div>

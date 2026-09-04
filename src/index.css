@@ -689,6 +689,84 @@ nav ul li a.active::after {
   background: rgba(56, 189, 248, 0.08);
 }
 
+.experience-list {
+  display: grid;
+  gap: 22px;
+  margin-top: 34px;
+}
+
+.experience-card {
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.045), transparent 42%),
+    var(--surface);
+  padding: 28px;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+.experience-card::before {
+  content: "";
+  position: absolute;
+  inset: 28px auto 28px 0;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-cool));
+}
+
+.experience-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.experience-heading h3 {
+  color: var(--text);
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  font-weight: 850;
+  line-height: 1.2;
+}
+
+.experience-heading p {
+  margin-top: 6px;
+  color: var(--accent-strong);
+  font-size: 0.98rem;
+  font-weight: 800;
+}
+
+.experience-meta {
+  display: grid;
+  gap: 6px;
+  min-width: 210px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 750;
+  text-align: right;
+}
+
+.experience-points {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding-left: 20px;
+}
+
+.experience-points li {
+  color: var(--text-muted);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.experience-points li::marker {
+  color: var(--accent-cool);
+}
+
+.experience-stack {
+  margin-top: 24px;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
@@ -885,6 +963,15 @@ textarea {
   .about-highlights {
     grid-template-columns: 1fr;
   }
+
+  .experience-heading {
+    display: grid;
+  }
+
+  .experience-meta {
+    min-width: 0;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -1033,6 +1120,10 @@ textarea {
   .tab-links {
     flex: 1 1 auto;
     text-align: center;
+  }
+
+  .experience-card {
+    padding: 24px 22px;
   }
 
   .project-list .project {
