@@ -4,55 +4,65 @@ import ProjectCard from '../ui/ProjectCard'
 function Projects() {
     const projects = [
         {
-            title: "Saison Components",
-            description: "Corporate website developed to showcase electronic component distribution services across India. Focused on clean UI, SEO optimization, and structured content to improve brand visibility and lead generation.",
-            previewImage: "/images/saison.png",
-            url: "https://saisoncomponents.com"
+            title: 'Laravel CRM',
+            type: 'Full-stack project',
+            description: 'A modular API-first CRM with lead, customer, contact, support ticket, activity, notification, and reporting modules.',
+            contribution: 'Built the application structure with role-based access control, permissions, reusable components, data transfer patterns, and service-layer architecture.',
+            tags: ['Laravel', 'React.js', 'JavaScript', 'Tailwind CSS', 'REST APIs', 'MySQL'],
+            links: [
+                {
+                    label: 'GitHub',
+                    url: 'https://github.com/DevrajJaiswal/laravel-crm',
+                },
+            ],
         },
         {
-            title: "Radicon Laboratories",
-            description: "Professional business website designed for pharmaceutical and laboratory solutions company. Implemented responsive layout, optimized performance, and improved user navigation experience.",
-            previewImage: "/images/radicon.png",
-            url: "https://radiconlab.com"
+            title: 'UnoPIM Shopify Plugin',
+            type: 'Open-source contribution',
+            description: 'Feature work and enhancements for the Shopify plugin in the UnoPIM ecosystem.',
+            contribution: 'Contributed new features and improved existing plugin functionality for product data workflows.',
+            tags: ['UnoPIM', 'Shopify', 'PHP', 'Laravel', 'APIs'],
+            links: [
+                {
+                    label: 'GitHub',
+                    url: 'https://github.com/unopim/shopify-connector',
+                },
+            ],
         },
         {
-            title: "Optimum EcoSolutions",
-            description: "Sustainability-focused corporate website built with modern UI design. Enhanced digital presence with service-based structure and mobile-first responsiveness.",
-            previewImage: "/images/Optimum ecosolutions.png",
-            url: "https://optimumecosolutions.in"
+            title: 'Saison Components Website',
+            type: 'Business website',
+            description: 'Company website work focused on responsive design, performance, content updates, and user experience.',
+            contribution: 'Maintained the website, managed content, supported SEO improvements, and handled web-related technical support.',
+            tags: ['HTML', 'CSS', 'PHP', 'WordPress', 'SEO'],
+            links: [
+                {
+                    label: 'Live Site',
+                    url: 'https://saisoncomponents.com',
+                },
+            ],
         },
-        {
-            title: "Optimum Motors",
-            description: "Business website developed for automotive division under Optimum Group. Designed product showcase layout and improved digital branding with structured information flow.",
-            previewImage: "/images/Optimum motors.png",
-            url: "https://optimumgroups.in"
-        },
-        {
-            title: "News Portal",
-            description: "Full-stack News Portal built using PHP, MySQL, HTML, CSS, and Bootstrap. Features include user authentication, News post management, News category filtering, and role-based access (Admin & Normal User).",
-            previewImage: "/images/bg.jpg",
-            url: "https://github.com/DevrajJaiswal/News-Portal"
-        },
-        {
-            title: "Wroley E-Scooter",
-            description: "Modern landing page created for electric scooter brand using responsive design principles. Focused on product highlighting, smooth animations, and optimized loading performance.",
-            previewImage: "/images/Wroley e-scooter.png",
-            url: "https://wroley-e-scooter.netlify.app"
-        }
     ]
+
     return (
         <>
             <section id="projects">
                 <div className="container">
-                    <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
+                    <p className="section-kicker" data-aos="flip-up" data-aos-duration="1000">
                         Projects
+                    </p>
+                    <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
+                        Selected Work
                     </h2>
+                    <p className="section-intro">
+                        A focused set of projects and professional work aligned with my current
+                        backend, Laravel, PIM, API, and full-stack development direction.
+                    </p>
+
                     <div className="project-list">
-                        {
-                            projects.map((project, index) =>
-                                <ProjectCard key={index} project={project} />
-                            )
-                        }
+                        {projects.map((project) => (
+                            <ProjectCard key={project.title} project={project} />
+                        ))}
                     </div>
                 </div>
             </section>
