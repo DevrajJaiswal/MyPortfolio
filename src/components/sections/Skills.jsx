@@ -4,54 +4,60 @@ import SkillCard from '../ui/SkillCard'
 function Skills() {
     const skills = [
         {
-            title: "ReactJS",
-            description: "Building modern, component-based user interfaces using React. Experienced in hooks, state management, routing, and creating scalable SPA applications with optimized performance.",
-            icon: "⚛️"
+            title: 'Backend',
+            description: 'Server-side development, MVC applications, business logic, and maintainable API-driven features.',
+            items: ['PHP', 'Laravel', 'Symfony']
         },
         {
-            title: "VueJS",
-            description: "Developing reactive and dynamic web applications using Vue ecosystem. Familiar with Vue Router, component lifecycle, and state-driven UI architecture.",
-            icon: "🟢"
+            title: 'Frontend',
+            description: 'Responsive interfaces and component-based UI work for practical web applications.',
+            items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React.js', 'Bootstrap', 'Tailwind CSS', 'jQuery']
         },
         {
-            title: "PHP",
-            description: "Strong backend development skills using core PHP. Experience in authentication systems, REST APIs, form handling, and secure server-side logic implementation.",
-            icon: "🐘"
+            title: 'Databases',
+            description: 'Relational database work for application data, queries, and structured backend features.',
+            items: ['MySQL', 'PostgreSQL']
         },
         {
-            title: "MySQL",
-            description: "Designing relational databases, writing optimized queries, joins, indexing, and handling data relationships efficiently for scalable applications.",
-            icon: "🗄️"
+            title: 'APIs & Integrations',
+            description: 'Connecting applications and third-party platforms through structured API workflows.',
+            items: ['REST APIs', 'GraphQL']
         },
         {
-            title: "Appwrite",
-            description: "Integrating Appwrite for backend-as-a-service solutions including authentication, database management, file storage, and secure API handling in modern web apps.",
-            icon: "🚀"
+            title: 'PIM & Platforms',
+            description: 'Product information management systems and platform integrations from recent professional work.',
+            items: ['Pimcore', 'Akeneo PIM', 'UnoPIM']
         },
         {
-            title: "Laravel",
-            description: "Building robust MVC applications using Laravel framework. Experience with routing, middleware, Eloquent ORM, authentication, and RESTful API development.",
-            icon: "🔴"
+            title: 'Tools & DevOps',
+            description: 'Daily development tooling, version control, testing workflows, and deployment support.',
+            items: ['Git', 'GitHub', 'GitLab', 'GitHub Actions', 'Docker', 'Firebase', 'Postman']
         },
         {
-            title: "Symfony",
-            description: "Working with Symfony framework to build structured and maintainable enterprise-level applications following best coding standards and reusable components.",
-            icon: "🎯"
+            title: 'AI-Assisted Development',
+            description: 'Modern coding assistants used as part of development and problem-solving workflows.',
+            items: ['Claude', 'OpenAI Codex', 'GitHub Copilot']
         }
     ]
+
     return (
         <>
             <section id="services">
                 <div className="container">
-                    <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
+                    <p className="section-kicker" data-aos="flip-up" data-aos-duration="1000">
                         Skills
+                    </p>
+                    <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
+                        Skills & Tech Stack
                     </h2>
+                    <p className="section-intro">
+                        Technologies I use across backend development, frontend interfaces,
+                        APIs, integrations, PIM platforms, and delivery workflows.
+                    </p>
                     <div className="services-list">
-                        {
-                            skills.map((skill, index) =>
-                                < SkillCard key={index} skill={skill} />
-                            )
-                        }
+                        {skills.map((skill) => (
+                            <SkillCard key={skill.title} skill={skill} />
+                        ))}
                     </div>
                 </div>
             </section>

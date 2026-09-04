@@ -120,6 +120,13 @@ section:nth-child(even) {
   line-height: 1.12;
 }
 
+.section-intro {
+  max-width: 700px;
+  margin: -18px 0 0;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -645,13 +652,6 @@ nav ul li a.active::after {
   background: var(--surface-soft);
 }
 
-.services-list .service span {
-  display: inline-flex;
-  margin-bottom: 18px;
-  font-size: 2rem;
-  line-height: 1;
-}
-
 .services-list .service h3 {
   margin-bottom: 12px;
   color: var(--text);
@@ -664,12 +664,29 @@ nav ul li a.active::after {
   font-size: 0.95rem;
 }
 
-.services-list .service a {
-  display: inline-flex;
-  margin-top: 22px;
-  color: var(--accent-cool);
-  font-size: 0.92rem;
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.skill-tags li {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--text-soft);
+  padding: 6px 10px;
+  font-size: 0.84rem;
   font-weight: 800;
+  line-height: 1.2;
+  list-style: none;
+}
+
+.services-list .service:hover .skill-tags li {
+  border-color: rgba(56, 189, 248, 0.32);
+  background: rgba(56, 189, 248, 0.08);
 }
 
 .project-list {
