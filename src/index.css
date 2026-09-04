@@ -878,20 +878,59 @@ nav ul li a.active::after {
   flex: 1 1 52%;
 }
 
-#contact .left ul {
-  margin: 0 0 28px;
+.contact-details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 26px;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.16);
+}
+
+.contact-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
   padding: 0;
 }
 
-#contact .left ul li {
-  margin-bottom: 18px;
+.contact-list li {
   list-style: none;
 }
 
-#contact .left li i {
-  margin-right: 12px;
+.contact-list a {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: var(--radius-sm);
+  color: var(--text-soft);
+  padding: 8px;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+}
+
+.contact-list i {
+  width: 22px;
+  margin-top: 4px;
   color: var(--accent-strong);
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+
+.contact-list span {
+  display: grid;
+  gap: 2px;
+}
+
+.contact-list strong {
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 850;
 }
 
 .social-icons {
@@ -901,17 +940,53 @@ nav ul li a.active::after {
   margin-top: 26px;
 }
 
-#contact .left .social-icons a i {
-  color: var(--text-muted);
-  font-size: 1.55rem;
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
   transition:
-    transform 180ms ease,
-    color 180ms ease;
+    border-color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
 }
 
-#contact .left .social-icons i:hover {
-  color: var(--accent-strong);
+.social-icons a:hover,
+.social-icons a:focus-visible {
+  border-color: rgba(240, 84, 84, 0.42);
+  background: rgba(240, 84, 84, 0.12);
   transform: translateY(-3px);
+}
+
+.social-icons a i {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  transition: color 180ms ease;
+}
+
+.social-icons a:hover i,
+.social-icons a:focus-visible i {
+  color: var(--accent-strong);
+}
+
+form {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 26px;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.16);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-soft);
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 form input,

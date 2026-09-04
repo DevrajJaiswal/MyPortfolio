@@ -24,7 +24,7 @@ function Hero() {
                                 </div>
 
                                 <div className="hero-links" aria-label="Professional links">
-                                    <a href="/images/Devraj-Jaiswal-Resume-Full-Stack-Web-Developer.pdf" target="_blank" rel="noreferrer">
+                                    <a href="https://drive.google.com/file/d/1yB37Holtk2cDniZHGEePtkTBCkyk5cc2/view?usp=sharing" target="_blank" rel="noreferrer">
                                         Resume
                                     </a>
                                     <a href="https://github.com/devrajjaiswal" target="_blank" rel="noreferrer">

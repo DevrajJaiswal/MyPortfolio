@@ -41,7 +41,7 @@ function Header() {
                             ))}
                             <li>
                                 <a
-                                    href="/images/Devraj-Jaiswal-Resume-Full-Stack-Web-Developer.pdf"
+                                    href="https://drive.google.com/file/d/1yB37Holtk2cDniZHGEePtkTBCkyk5cc2/view?usp=sharing"
                                     className="resume-link"
                                     target="_blank"
                                     rel="noreferrer"
