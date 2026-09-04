@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function About() {
-    const [activeTab, setActiveTab] = useState('skills');
-
     const highlights = [
         'Full-stack web development with PHP, Laravel, MySQL, and JavaScript',
         'Responsive business websites with clean layouts and practical UX',
@@ -40,78 +38,6 @@ function About() {
                                     <li key={highlight}>{highlight}</li>
                                 ))}
                             </ul>
-
-                            <div className="tab-titles">
-                                <button
-                                    type="button"
-                                    className={`tab-links ${activeTab === 'skills' ? 'active-link' : ''}`}
-                                    onClick={() => setActiveTab('skills')}
-                                >
-                                    Skills
-                                </button>
-                                <button
-                                    type="button"
-                                    className={`tab-links ${activeTab === 'experiences' ? 'active-link' : ''}`}
-                                    onClick={() => setActiveTab('experiences')}
-                                >
-                                    Experience
-                                </button>
-                                <button
-                                    type="button"
-                                    className={`tab-links ${activeTab === 'education' ? 'active-link' : ''}`}
-                                    onClick={() => setActiveTab('education')}
-                                >
-                                    Education
-                                </button>
-                            </div>
-                            <div className={`tab-contents ${activeTab === 'skills' ? 'active-tab' : ''}`} id="skills">
-                                <ul>
-                                    <li>
-                                        <span>Frontend: </span>HTML, CSS, JavaScript, Bootstrap,
-                                        jQuery, AJAX
-                                    </li>
-                                    <li><span>Backend: </span>PHP, Laravel, MySQL, REST API</li>
-                                    <li><span>CMS & Tools: </span>WordPress, Postman</li>
-                                    <li><span>Version Control: </span>Git, GitHub</li>
-                                    <li><span>Design: </span>Adobe Photoshop, Canva</li>
-                                </ul>
-                            </div>
-                            <div className={`tab-contents ${activeTab === 'experiences' ? 'active-tab' : ''}`} id="experiences">
-                                <ul>
-                                    <li>
-                                        <span>Webkul Software Pvt Ltd</span> - Associate Software Engineer<br />
-                                        <span className="duration">July 2025 - September 2026</span>
-                                    </li>
-                                    <li>
-                                        <span>Saison Components</span> - Web Developer & Tech Support<br />
-                                        <span className="duration">October 2023 - June 2025</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className={`tab-contents ${activeTab === 'education' ? 'active-tab' : ''}`} id="education">
-                                <ul>
-                                    <li>
-                                        <span>MCA</span> - AKTU<br />
-                                        <span className="duration">Aug 2023 - 2025</span>
-                                        <br />Ghaziabad, Uttar Pradesh
-                                    </li>
-                                    <li>
-                                        <span>BCA</span> - CCS University<br />
-                                        <span className="duration">Aug 2019 - June 2022</span>
-                                        <br />Ghaziabad, Uttar Pradesh
-                                    </li>
-                                    <li>
-                                        <span>Intermediate</span> - UP Board<br />
-                                        <span className="duration">July 2018 - April 2019</span>
-                                        <br />Ghaziabad, Uttar Pradesh
-                                    </li>
-                                    <li>
-                                        <span>High School</span> - UP Board<br />
-                                        <span className="duration">July 2016 - June 2017</span>
-                                        <br />Ghaziabad, Uttar Pradesh
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
