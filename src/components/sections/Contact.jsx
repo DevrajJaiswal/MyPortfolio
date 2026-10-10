@@ -35,9 +35,9 @@ function Contact() {
             icon: 'fa-brands fa-github',
         },
         {
-            label: 'X / Twitter',
-            href: 'https://twitter.com/Devraj010?t=wAnzjyt0awiTG6O-FNXp_w&s=09',
-            icon: 'fa-brands fa-twitter',
+            label: 'X',
+            href: 'https://x.com/DevrajJaiswal15',
+            icon: 'fa-brands fa-x',
         },
         {
             label: 'YouTube',
@@ -84,7 +84,7 @@ function Contact() {
                             ))}
                         </div>
 
-                        <a href="https://drive.google.com/file/d/1yB37Holtk2cDniZHGEePtkTBCkyk5cc2/view?usp=sharing" target="_blank" rel="noreferrer" className="btn">
+                        <a href="https://drive.google.com/file/d/17bPanTv9KhCLawbzlD9WIYfWtjFLBsOJ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn">
                             View Resume
                         </a>
                     </div>

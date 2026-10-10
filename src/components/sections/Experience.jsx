@@ -21,8 +21,8 @@ function Experience() {
             company: 'Saison Components LLP',
             role: 'Web Master & Tech Support',
             location: 'Ghaziabad, Uttar Pradesh',
-            period: 'October 2023 - June 2025',
-            stack: ['HTML', 'CSS', 'PHP', 'WordPress', 'SEO'],
+            period: 'May 2024 - June 2025',
+            stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'WordPress'],
             points: [
                 'Developed and maintained the company website with a focus on responsive design, performance, and user experience.',
                 'Implemented SEO best practices to improve search visibility and organic traffic.',

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../ui/Button'
 
 function Hero() {
-    const techStack = ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'React', 'REST APIs'];
+    const techStack = ['PHP', 'Laravel', 'Node.js', 'Express.js', 'MySQL', 'PostgreSQL', 'JavaScript', 'React.js', 'REST APIs'];
 
     return (
         <>
@@ -12,9 +12,9 @@ function Hero() {
                         <div className="row">
                             <div className="left" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
                                 <p className="hero-eyebrow">Hi, I'm <span>Devraj Jaiswal</span> from Ghaziabad</p>
-                                <h1>Full Stack Developer focused on PHP, Laravel, and practical web products.</h1>
+                                <h1>Full Stack Software Engineer</h1>
                                 <p className="hero-copy">
-                                    I build responsive websites and full-stack web applications with clean frontend work,
+                                    I build full-stack web applications with clean frontend work,
                                     reliable backend logic, APIs, and database-driven features.
                                 </p>
 
@@ -24,7 +24,7 @@ function Hero() {
                                 </div>
 
                                 <div className="hero-links" aria-label="Professional links">
-                                    <a href="https://drive.google.com/file/d/1yB37Holtk2cDniZHGEePtkTBCkyk5cc2/view?usp=sharing" target="_blank" rel="noreferrer">
+                                    <a href="https://drive.google.com/file/d/17bPanTv9KhCLawbzlD9WIYfWtjFLBsOJ/view?usp=sharing" target="_blank" rel="noreferrer">
                                         Resume
                                     </a>
                                     <a href="https://github.com/devrajjaiswal" target="_blank" rel="noreferrer">

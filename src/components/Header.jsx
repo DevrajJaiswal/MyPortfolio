@@ -23,7 +23,7 @@ function Header() {
                             <img src="images/favicon.png" className="logo" alt="Devraj Jaiswal logo" />
                             <span>
                                 <strong>Devraj Jaiswal</strong>
-                                <small>Full Stack Developer</small>
+                                <small>Software Engineer</small>
                             </span>
                         </Link>
 
@@ -41,7 +41,7 @@ function Header() {
                             ))}
                             <li>
                                 <a
-                                    href="https://drive.google.com/file/d/1yB37Holtk2cDniZHGEePtkTBCkyk5cc2/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/17bPanTv9KhCLawbzlD9WIYfWtjFLBsOJ/view?usp=sharing"
                                     className="resume-link"
                                     target="_blank"
                                     rel="noreferrer"
