@@ -7,26 +7,25 @@ function Experience() {
             role: 'Associate Software Engineer',
             location: 'Noida, Uttar Pradesh',
             period: 'July 2025 - September 2026',
-            stack: ['Laravel', 'Symfony', 'React.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'MySQL', 'REST APIs', 'GraphQL'],
+            stack: ['Laravel', 'Symfony', 'Node.js', 'Express.js', 'React.js', 'Tailwind CSS', 'MySQL', 'PostgreSQL', 'REST APIs', 'GraphQL'],
             points: [
-                'Developed and enhanced plugins and connectors for Pimcore and UnoPIM.',
-                'Integrated REST and GraphQL APIs with platforms including Shopify, ERPNext, BigCommerce, and commercetools.',
-                'Contributed to the open-source Shopify plugin for UnoPIM by adding features and improving existing functionality.',
-                'Built AI-powered UnoPIM plugins using LLM APIs for product title, description, and metadata generation.',
-                'Resolved production issues across backend services and integrations, improving application stability.',
-                'Implemented GitHub Actions CI/CD workflows to support automated delivery.',
+                'Developed and enhanced 10+ custom plugins and API connectors for enterprise platforms, including Pimcore and UnoPIM, integrating REST and GraphQL endpoints with 5+ third-party systems such as Shopify, BigCommerce, and ERPNext.',
+                'Contributed core features and performance enhancements to the open-source UnoPIM Shopify plugin, improving API response speed and data sync efficiency by 50%.',
+                'Developed AI-driven plugins using LLM APIs to automate product title, description, and metadata generation, reducing manual catalog entry time by 60%.',
+                'Diagnosed and resolved 15+ critical production issues across backend services and API integrations, improving system stability and uptime.',
+                'Configured automated GitHub Actions CI/CD pipelines, reducing manual deployment time by 40% and streamlining testing procedures.',
             ],
         },
         {
             company: 'Saison Components LLP',
-            role: 'Web Master & Tech Support',
+            role: 'Web Developer',
             location: 'Ghaziabad, Uttar Pradesh',
             period: 'May 2024 - June 2025',
-            stack: ['HTML', 'CSS', 'JavaScript', 'PHP', 'WordPress'],
+            stack: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'WordPress'],
             points: [
-                'Developed and maintained the company website with a focus on responsive design, performance, and user experience.',
-                'Implemented SEO best practices to improve search visibility and organic traffic.',
-                'Managed website content and digital platforms while providing technical support for website-related and basic IT issues.',
+                'Built and maintained responsive web pages and landing pages using HTML, CSS, JavaScript, and WordPress.',
+                'Managed website content updates, layout adjustments, and front-end styling across company platforms serving thousands of monthly visitors.',
+                'Executed technical site troubleshooting, asset updates, and basic SEO configurations, boosting site loading speed and search visibility.',
             ],
         },
     ];
@@ -34,15 +33,11 @@ function Experience() {
     return (
         <section id="experience">
             <div className="container">
-                <p className="section-kicker" data-aos="flip-up" data-aos-duration="1000">
-                    Experience
-                </p>
                 <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
-                    Professional Experience
+                    Experience
                 </h2>
                 <p className="section-intro">
-                    Recent roles and responsibilities from my updated resume, focused on backend development,
-                    integrations, PIM work, and practical web delivery.
+                    At Webkul, I developed plugins and API connectors; at Saison Components, I built and maintained responsive company websites.
                 </p>
 
                 <div className="experience-list">

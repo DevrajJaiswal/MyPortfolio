@@ -19,14 +19,11 @@ function Education() {
     return (
         <section id="education">
             <div className="container">
-                <p className="section-kicker" data-aos="flip-up" data-aos-duration="1000">
-                    Education
-                </p>
                 <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
-                    Academic Background
+                    Education
                 </h2>
                 <p className="section-intro">
-                    My formal education in computer applications.
+                    I studied computer applications at AKTU and CCSU.
                 </p>
 
                 <div className="education-list">

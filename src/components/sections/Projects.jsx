@@ -5,13 +5,13 @@ function Projects() {
     const projectGroups = [
         {
             title: 'Personal Project',
-            description: 'A project I built to practice full-stack Laravel application structure.',
+            description: 'A personal Laravel project for managing leads, customers, and support work.',
             projects: [
                 {
                     title: 'Laravel CRM',
                     type: 'Full-stack project',
-                    description: 'A CRM with lead, customer, contact, support ticket, activity, notification, and reporting modules.',
-                    contribution: 'Built the app structure with role-based access, permissions, reusable components, and service-layer code.',
+                    description: 'A CRM with modules for leads, customers, contacts, support tickets, activities, notifications, and reports.',
+                    contribution: 'I built the application with role-based permissions, reusable components, and a service layer.',
                     tags: ['Laravel', 'React.js', 'JavaScript', 'Tailwind CSS', 'REST APIs', 'MySQL'],
                     links: [
                         {
@@ -24,13 +24,13 @@ function Projects() {
         },
         {
             title: 'Company & Open Source Work',
-            description: 'Selected work from company websites and open-source contribution.',
+            description: 'A selection of my company and open-source work.',
             projects: [
                 {
                     title: 'UnoPIM Shopify Plugin',
                     type: 'Open-source contribution',
-                    description: 'Feature work and improvements for the Shopify connector in the UnoPIM ecosystem.',
-                    contribution: 'Worked on plugin functionality for product data workflows and Shopify integration.',
+                    description: 'An open-source Shopify connector for the UnoPIM platform.',
+                    contribution: 'I contributed features and fixes for product data sync with Shopify.',
                     tags: ['UnoPIM', 'Shopify', 'PHP', 'Laravel', 'APIs'],
                     links: [
                         {
@@ -42,9 +42,9 @@ function Projects() {
                 {
                     title: 'Saison Components Website',
                     type: 'Company website',
-                    description: 'Website work for Saison Components with updates around content, responsiveness, performance, and SEO.',
-                    contribution: 'Maintained the website, managed content updates, supported SEO, and handled web-related technical support.',
-                    tags: ['HTML', 'CSS', 'PHP', 'WordPress', 'SEO'],
+                    description: 'Website updates and maintenance for Saison Components.',
+                    contribution: 'I updated website content and layouts, maintained front-end styles, and worked on technical fixes and basic SEO.',
+                    tags: ['HTML', 'CSS', 'PHP', 'SEO'],
                     links: [
                         {
                             label: 'Live Site',
@@ -61,15 +61,11 @@ function Projects() {
     return (
         <section id="projects">
             <div className="container">
-                <p className="section-kicker" data-aos="flip-up" data-aos-duration="1000">
-                    Projects
-                </p>
                 <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
-                    Projects I Can Talk Through
+                    Projects
                 </h2>
                 <p className="section-intro">
-                    A short list of work that matches my current PHP, Laravel, WordPress, API,
-                    and frontend experience.
+                    A mix of full stack application work, open-source contributions, and company website work.
                 </p>
 
                 <div className="project-groups">

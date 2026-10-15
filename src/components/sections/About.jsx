@@ -1,43 +1,36 @@
 import React from 'react'
 
 function About() {
-    const highlights = [
-        'Full-stack web development with PHP, Laravel, MySQL, and JavaScript',
-        'Responsive business websites with clean layouts and practical UX',
-        'API, authentication, form handling, and database-driven features',
-    ];
-
     return (
         <>
             <section id="about">
                 <div className="container">
-                    <div className="row">
-                        <div className="left" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+                    <div className="row about-layout">
+                        <figure className="left about-portrait" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
                             <img src="images/devraj profile picture.png" alt="Devraj Jaiswal" />
-                        </div>
+                            <figcaption>
+                                <strong>Devraj Jaiswal</strong>
+                                <span>Full Stack Developer <i aria-hidden="true">&middot;</i> Ghaziabad, India</span>
+                            </figcaption>
+                        </figure>
                         <div className="right" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="200">
-                            <p className="section-kicker">About Me</p>
-                            <h2>Developer who enjoys building useful websites end to end.</h2>
+                            <h2 className="section-title">About</h2>
 
                             <div className="about-copy">
                                 <p>
-                                    I am Devraj Jaiswal, a Full Stack Web Developer based in Ghaziabad,
-                                    Uttar Pradesh. I work across frontend and backend development, with a
-                                    stronger focus on PHP, Laravel, MySQL, REST APIs, and practical
-                                    business websites.
+                                    I&apos;m a full stack developer with 2+ years of professional experience building web applications, APIs, and integrations.
+                                    I enjoy work that connects backend services and data with useful features in the interface.
                                 </p>
                                 <p>
-                                    My work includes responsive interfaces, backend logic, form handling,
-                                    authentication flows, database features, and websites built to be clear,
-                                    maintainable, and useful for real users.
+                                    At Webkul, I developed plugins and API connectors for Pimcore and UnoPIM, integrating platforms such as Shopify,
+                                    BigCommerce, and ERPNext. I contributed to the open-source UnoPIM Shopify plugin and built LLM-powered tools
+                                    for product content. Before that, I built and maintained company websites at Saison Components.
+                                </p>
+                                <p>
+                                    I&apos;m open to full stack, PERN stack, frontend, backend, and software engineering roles, and available to join immediately.
                                 </p>
                             </div>
 
-                            <ul className="about-highlights" aria-label="Development strengths">
-                                {highlights.map((highlight) => (
-                                    <li key={highlight}>{highlight}</li>
-                                ))}
-                            </ul>
                         </div>
                     </div>
                 </div>

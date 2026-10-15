@@ -4,7 +4,7 @@ function Footer() {
     return (
         <>
             <footer className="copyright">
-                <p>© 2026 Devraj Jaiswal. All Rights Reserved.</p>
+                <p>&copy; 2026 Devraj Jaiswal.</p>
             </footer>
         </>
     )

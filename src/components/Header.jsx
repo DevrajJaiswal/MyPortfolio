@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom';
+import { RESUME_URL } from '../config/links'
 
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +11,7 @@ function Header() {
         { label: 'Home', to: '/' },
         { label: 'About', to: '/about' },
         { label: 'Skills', to: '/skills' },
+        { label: 'Experience', to: '/experience' },
         { label: 'Projects', to: '/projects' },
         { label: 'Contact', to: '/contact' },
     ];
@@ -23,7 +25,7 @@ function Header() {
                             <img src="images/favicon.png" className="logo" alt="Devraj Jaiswal logo" />
                             <span>
                                 <strong>Devraj Jaiswal</strong>
-                                <small>Software Engineer</small>
+                                <small>Full Stack Developer</small>
                             </span>
                         </Link>
 
@@ -41,13 +43,13 @@ function Header() {
                             ))}
                             <li>
                                 <a
-                                    href="https://drive.google.com/file/d/17bPanTv9KhCLawbzlD9WIYfWtjFLBsOJ/view?usp=sharing"
+                                    href={RESUME_URL}
                                     className="resume-link"
                                     target="_blank"
                                     rel="noreferrer"
                                     onClick={closeMenu}
                                 >
-                                    Resume
+                                    Resume <i className="fa fa-arrow-up-right-from-square" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <button

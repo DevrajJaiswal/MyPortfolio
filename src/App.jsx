@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import Experience from "./pages/Experience";
 import Blog from "./pages/Blog";
 
 function AosInitializer() {
@@ -51,6 +52,9 @@ function App() {
         </Route>
         <Route path="/skills" element={<MainLayout />}>
           <Route index element={<Skills />} />
+        </Route>
+        <Route path="/experience" element={<MainLayout />}>
+          <Route index element={<Experience />} />
         </Route>
         <Route path="/projects" element={<MainLayout />}>
           <Route index element={<Projects />} />

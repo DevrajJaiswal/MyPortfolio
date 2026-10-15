@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../ui/Button'
+import { RESUME_URL } from '../../config/links'
 
 function Contact() {
     const contactLinks = [
@@ -49,15 +50,12 @@ function Contact() {
     return (
         <section id="contact">
             <div className="container">
-                <p className="section-kicker" data-aos="flip-up" data-aos-duration="1000">
-                    Contact
-                </p>
                 <h2 className="section-title" data-aos="flip-up" data-aos-duration="1000">
-                    Let&apos;s Talk
+                    Get in touch
                 </h2>
                 <p className="section-intro">
-                    I&apos;m open to full-stack, backend, PHP, and Laravel developer roles.
-                    Email is the best way to reach me.
+                    I&apos;m based in Ghaziabad and open to opportunities across Noida, Delhi NCR, Gurugram, Mumbai, Pune, Hyderabad, and Bengaluru.
+                    I&apos;m available to join immediately. Email is the best way to reach me.
                 </p>
 
                 <div className="row">
@@ -84,7 +82,7 @@ function Contact() {
                             ))}
                         </div>
 
-                        <a href="https://drive.google.com/file/d/17bPanTv9KhCLawbzlD9WIYfWtjFLBsOJ/view?usp=sharing" target="_blank" rel="noreferrer" className="btn">
+                        <a href={RESUME_URL} target="_blank" rel="noreferrer" className="btn">
                             View Resume
                         </a>
                     </div>
